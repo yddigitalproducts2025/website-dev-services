@@ -66,35 +66,38 @@
 
   <div class="relative z-10">
 
-    <!-- HEADER (Moved Logo & Button Outward) -->
-    <header class="sticky top-0 z-50 bg-slate-950/70 backdrop-blur-xl border-b border-brand-border transition-all">
-      <div class="max-w-[95%] mx-auto px-6 sm:px-10 lg:px-12 h-24 grid grid-cols-2 md:grid-cols-3 items-center">
-        <!-- Left: Logo & Brand Name (No Square Border) -->
-<a href="#" class="flex items-center gap-3.5 group justify-self-start">
-  <img src="Logo.jpg" alt="Website Development Services Logo" class="h-12 w-auto object-contain rounded-lg group-hover:scale-105 transition-transform" />
-  <div class="flex flex-col">
-    <span class="text-base sm:text-lg font-bold tracking-wider text-white uppercase leading-tight group-hover:text-brand-cyan transition-colors">
-      WEBSITE DEVELOPMENT SERVICES
-    </span>
-    <span class="text-[10px] tracking-widest text-slate-350 font-medium uppercase mt-0.5">INNOVATE. DESIGN. DEVELOP.</span>
-  </div>
-</a>
-
-        <!-- Center: Nav Links -->
-        <nav class="hidden md:flex items-center justify-center gap-8 text-sm font-semibold text-slate-300 justify-self-center">
-          <a href="#why-us" class="hover:text-brand-cyan transition-colors">Why Us</a>
-          <a href="#portfolio" class="hover:text-brand-cyan transition-colors">Showroom</a>
-          <a href="#packages" class="hover:text-brand-cyan transition-colors">Packages</a>
-          <a href="#process" class="hover:text-brand-cyan transition-colors">Process</a>
-        </nav>
+    <!-- HEADER (Top Layer: Logo & CTA Only) -->
+    <header class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-xl border-b border-brand-border transition-all">
+      <div class="max-w-[95%] mx-auto px-6 sm:px-10 lg:px-12 h-20 flex items-center justify-between">
+        
+        <!-- Left: Logo & Brand Name -->
+        <a href="#" class="flex items-center gap-3.5 group">
+          <img src="Logo.jpg" alt="Website Development Services Logo" class="h-10 sm:h-12 w-auto object-contain rounded-lg group-hover:scale-105 transition-transform" />
+          <div class="flex flex-col">
+            <span class="text-sm sm:text-lg font-bold tracking-wider text-white uppercase leading-tight group-hover:text-brand-cyan transition-colors">
+              WEBSITE DEVELOPMENT SERVICES
+            </span>
+            <span class="text-[9px] sm:text-[10px] tracking-widest text-slate-400 font-medium uppercase mt-0.5">INNOVATE. DESIGN. DEVELOP.</span>
+          </div>
+        </a>
 
         <!-- Right: CTA Button -->
-        <div class="flex items-center justify-end justify-self-end">
-          <a href="#contact" class="hidden sm:inline-flex bg-brand-cyan hover:bg-brand-cyanHover text-slate-950 font-bold text-sm px-6 py-2.5 rounded-xl shadow-lg shadow-brand-cyan/25 transition-all transform hover:-translate-y-0.5">
+        <div>
+          <a href="#contact" class="bg-brand-cyan hover:bg-brand-cyanHover text-slate-950 font-bold text-xs sm:text-sm px-5 sm:px-6 py-2.5 rounded-xl shadow-lg shadow-brand-cyan/25 transition-all transform hover:-translate-y-0.5">
             Get Free Audit
           </a>
         </div>
 
+      </div>
+
+      <!-- NAVIGATION SUB-BAR (Second Layer: Links) -->
+      <div class="border-t border-brand-border/40 bg-slate-900/50 backdrop-blur-md">
+        <div class="max-w-[95%] mx-auto px-6 sm:px-10 lg:px-12 h-12 flex items-center justify-center sm:justify-start gap-8 text-xs sm:text-sm font-semibold text-slate-300 overflow-x-auto">
+          <a href="#why-us" class="hover:text-brand-cyan transition-colors whitespace-nowrap">Why Us</a>
+          <a href="#portfolio" class="hover:text-brand-cyan transition-colors whitespace-nowrap">Showroom</a>
+          <a href="#packages" class="hover:text-brand-cyan transition-colors whitespace-nowrap">Packages</a>
+          <a href="#process" class="hover:text-brand-cyan transition-colors whitespace-nowrap">Process</a>
+        </div>
       </div>
     </header>
 
