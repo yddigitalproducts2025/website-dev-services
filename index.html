@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WEBSITE DEVELOPMENT SERVICES | High-Converting Custom Websites</title>
+  <meta name="description" content="Ultra-fast, mobile-first, hand-coded websites engineered strictly to generate qualified leads and sales for high-growth businesses." />
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Custom Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#030712',
+              card: 'rgba(15, 23, 42, 0.45)',
+              border: 'rgba(255, 255, 255, 0.12)',
+              cyan: '#06B6D4',
+              cyanHover: '#0891B2',
+              accent: '#38BDF8'
+            }
+          },
+          animation: {
+            'mesh': 'mesh 18s ease infinite alternate',
+          },
+          keyframes: {
+            mesh: {
+              '0%': { transform: 'scale(1) translate(0px, 0px) rotate(0deg)' },
+              '50%': { transform: 'scale(1.2) translate(40px, -30px) rotate(10deg)' },
+              '100%': { transform: 'scale(1) translate(-20px, 20px) rotate(-5deg)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .focus-section {
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: transform, opacity;
+    }
+    .focus-inactive {
+      opacity: 0.4;
+      transform: scale(0.95);
+    }
+    .focus-active {
+      opacity: 1;
+      transform: scale(1);
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-brand-cyan selection:text-slate-950 relative overflow-x-hidden">
+
+  <!-- Dynamic Glassmorphism Canvas -->
+  <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+    <div class="absolute -top-[20%] -left-[10%] w-[60vw] h-[60vw] rounded-full bg-gradient-to-br from-cyan-900/30 via-indigo-900/20 to-slate-950 blur-[120px] animate-mesh"></div>
+    <div class="absolute top-[40%] -right-[10%] w-[50vw] h-[50vw] rounded-full bg-gradient-to-tr from-slate-900/40 via-teal-900/20 to-cyan-900/30 blur-[130px] animate-mesh" style="animation-delay: -6s;"></div>
+    <div class="absolute -bottom-[20%] left-[20%] w-[55vw] h-[55vw] rounded-full bg-gradient-to-u from-slate-950 via-indigo-950/30 to-blue-900/20 blur-[140px] animate-mesh" style="animation-delay: -12s;"></div>
+    <div class="absolute inset-0 bg-[linear-gradient(to_right,#1f29370f_1px,transparent_1px),linear-gradient(to_bottom,#1f29370f_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
+  </div>
+
+  <div class="relative z-10">
+
+    <!-- HEADER (Moved Logo & Button Outward) -->
+    <header class="sticky top-0 z-50 bg-slate-950/70 backdrop-blur-xl border-b border-brand-border transition-all">
+      <div class="max-w-[95%] mx-auto px-6 sm:px-10 lg:px-12 h-24 grid grid-cols-2 md:grid-cols-3 items-center">
+        
+        <!-- Left: Logo & Brand Name -->
+        <a href="#" class="flex items-center gap-3.5 group justify-self-start">
+          <div class="h-16 w-16 flex items-center justify-center overflow-hidden rounded-xl bg-white/5 p-1 border border-brand-border/60 shrink-0 group-hover:border-brand-cyan/50 transition-colors">
+            <img src="images/logo.jpg" alt="Website Development Services Logo" class="h-full w-auto object-contain rounded-lg" />
+          </div>
+          <div class="flex flex-col">
+            <span class="text-base sm:text-lg font-bold tracking-wider text-white uppercase leading-tight group-hover:text-brand-cyan transition-colors">
+              WEBSITE DEVELOPMENT SERVICES
+            </span>
+            <span class="text-[10px] tracking-widest text-slate-350 font-medium uppercase mt-0.5">INNOVATE. DESIGN. DEVELOP.</span>
+          </div>
+        </a>
+
+        <!-- Center: Nav Links -->
+        <nav class="hidden md:flex items-center justify-center gap-8 text-sm font-semibold text-slate-300 justify-self-center">
+          <a href="#why-us" class="hover:text-brand-cyan transition-colors">Why Us</a>
+          <a href="#portfolio" class="hover:text-brand-cyan transition-colors">Showroom</a>
+          <a href="#packages" class="hover:text-brand-cyan transition-colors">Packages</a>
+          <a href="#process" class="hover:text-brand-cyan transition-colors">Process</a>
+        </nav>
+
+        <!-- Right: CTA Button -->
+        <div class="flex items-center justify-end justify-self-end">
+          <a href="#contact" class="hidden sm:inline-flex bg-brand-cyan hover:bg-brand-cyanHover text-slate-950 font-bold text-sm px-6 py-2.5 rounded-xl shadow-lg shadow-brand-cyan/25 transition-all transform hover:-translate-y-0.5">
+            Get Free Audit
+          </a>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="focus-section relative pt-16 pb-20 md:pt-28 md:pb-28 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center">
+          
+          <div class="inline-flex items-center gap-2 bg-slate-900/60 backdrop-blur-md border border-brand-border px-4 py-1.5 rounded-full text-xs sm:text-sm text-brand-cyan font-semibold mb-8 shadow-inner">
+            <span>⚡</span> Engineered for High-Converting Business Growth
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.15] mb-6">
+            Stop Losing Contracts to Competitors With Better Websites.
+          </h1>
+
+          <p class="text-lg sm:text-xl text-slate-300 leading-relaxed font-normal mb-10">
+            We build ultra-fast, modern, custom websites designed for one purpose: turning digital visitors into booked clients and quote requests. Zero platform lock-in, zero bloat.
+          </p>
+
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+            <a href="#contact" class="w-full sm:w-auto bg-brand-cyan hover:bg-brand-cyanHover text-slate-950 font-extrabold text-base px-8 py-4 rounded-xl shadow-xl shadow-brand-cyan/20 transition-all transform hover:-translate-y-0.5 text-center">
+              Claim Your Free Strategy Call
+            </a>
+            <a href="#portfolio" class="w-full sm:w-auto bg-slate-900/60 hover:bg-slate-800/80 backdrop-blur-md border border-brand-border text-slate-200 font-bold text-base px-8 py-4 rounded-xl transition-all text-center">
+              Explore Live Demos ↓
+            </a>
+          </div>
+
+          <div class="pt-8 border-t border-brand-border/60 grid grid-cols-1 sm:grid-cols-3 gap-4 text-center text-xs sm:text-sm font-semibold text-slate-400">
+            <div class="flex items-center justify-center gap-2">
+              <span class="text-brand-cyan text-base">🚀</span> <span><strong>100/100</strong> PageSpeed Metrics</span>
+            </div>
+            <div class="flex items-center justify-center gap-2">
+              <span class="text-brand-cyan text-base">📱</span> <span><strong>Mobile-First</strong> Layouts</span>
+            </div>
+            <div class="flex items-center justify-center gap-2">
+              <span class="text-brand-cyan text-base">📞</span> <span><strong>Direct Lead</strong> Delivery</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST & STANDARDS BANNER -->
+    <section class="border-y border-brand-border/40 bg-slate-900/30 py-6">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-wrap items-center justify-around gap-6 text-slate-300 text-xs sm:text-sm font-semibold">
+          <div class="flex items-center gap-2"><span class="text-brand-cyan">⚡</span> 100% Hand-Coded Performance</div>
+          <div class="flex items-center gap-2"><span class="text-brand-cyan">🔒</span> Zero Ongoing CMS Platform Lock-in</div>
+          <div class="flex items-center gap-2"><span class="text-brand-cyan">🔑</span> Complete Asset & Code Ownership</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUE PROPOSITION SECTION -->
+    <section id="why-us" class="focus-section py-20 md:py-28">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
+            Most Websites Aren't Broken—They're Built Wrong.
+          </h2>
+          <p class="text-lg text-slate-400">
+            If your site takes more than 3 seconds to load on mobile, your potential clients hit "back" and call your competition. Here is how we fix it:
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 lg:gap-12 items-stretch">
+          <div class="bg-slate-900/40 backdrop-blur-md border border-red-500/20 p-8 rounded-3xl flex flex-col justify-between shadow-2xl">
+            <div>
+              <div class="inline-block bg-red-500/10 border border-red-500/30 text-red-400 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4">
+                The Old Way
+              </div>
+              <h3 class="text-2xl font-bold text-white mb-6">Bloated Web Builders</h3>
+              <ul class="space-y-4 text-slate-300">
+                <li class="flex items-start gap-3"><span class="text-red-400 font-bold text-lg leading-none">✕</span><span>Slow-loading page builders that frustrate users on mobile devices and damage search rankings.</span></li>
+                <li class="flex items-start gap-3"><span class="text-red-400 font-bold text-lg leading-none">✕</span><span>Hidden template subscriptions, security risks, and broken third-party plugins.</span></li>
+                <li class="flex items-start gap-3"><span class="text-red-400 font-bold text-lg leading-none">✕</span><span>Cluttered layouts that bury phone numbers and inquiry forms.</span></li>
+              </ul>
+            </div>
+            <div class="mt-8 pt-6 border-t border-red-500/20 text-xs text-red-400 font-medium">Result: High bounce rates & wasted marketing budgets.</div>
+          </div>
+
+          <div class="bg-slate-900/40 backdrop-blur-md border border-brand-cyan/30 p-8 rounded-3xl flex flex-col justify-between shadow-2xl relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-brand-cyan/10 rounded-full blur-2xl pointer-events-none"></div>
+            <div>
+              <div class="inline-block bg-brand-cyan/10 border border-brand-cyan/30 text-brand-cyan text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4">
+                Our Engineering Approach
+              </div>
+              <h3 class="text-2xl font-bold text-white mb-6">Custom Hand-Coded Speed</h3>
+              <ul class="space-y-4 text-slate-200">
+                <li class="flex items-start gap-3"><span class="text-brand-cyan font-bold text-lg leading-none">✓</span><span>Instant load times running on lightweight, clean code optimized for Google search.</span></li>
+                <li class="flex items-start gap-3"><span class="text-brand-cyan font-bold text-lg leading-none">✓</span><span>One-click contact links and sticky CTA buttons designed for high conversion.</span></li>
+                <li class="flex items-start gap-3"><span class="text-brand-cyan font-bold text-lg leading-none">✓</span><span>Complete asset ownership—no recurring monthly platform lock-ins.</span></li>
+              </ul>
+            </div>
+            <div class="mt-8 pt-6 border-t border-brand-cyan/20 text-xs text-brand-cyan font-semibold">Result: Higher conversion, superior trust, and maximum inbound leads.</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SHOWROOM SECTION -->
+    <section id="portfolio" class="focus-section py-20 md:py-28">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-brand-cyan font-bold text-xs uppercase tracking-widest block mb-2">PORTFOLIO SHOWROOM</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">Interactive Demos Built to Convert.</h2>
+          <p class="text-slate-400 text-base sm:text-lg">Explore the exact modern structure, high-speed architecture, and lead-capture systems we build for our clients.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-slate-900/40 backdrop-blur-md border border-brand-border rounded-3xl overflow-hidden flex flex-col justify-between group hover:border-brand-cyan/50 transition-all duration-300 shadow-2xl">
+            <div>
+              <div class="h-48 bg-slate-800 relative overflow-hidden flex items-center justify-center">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent z-10"></div>
+                <img src="https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=600&q=80" alt="Landscaping Demo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <span class="absolute top-4 left-4 z-20 bg-slate-950/80 backdrop-blur-md text-brand-cyan border border-brand-cyan/30 text-xs font-bold px-3 py-1 rounded-full">Landscaping & Outdoor Living</span>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-white mb-2">Verdant & Stone Design</h3>
+                <p class="text-slate-400 text-sm mb-6 leading-relaxed">Engineered for high-ticket landscaping contractors. Features project showcases and interactive quote requests.</p>
+                <div class="space-y-2 mb-6 text-xs text-slate-300">
+                  <div class="flex items-center gap-2"><span class="text-brand-cyan">✔</span> Interactive Photo Galleries</div>
+                  <div class="flex items-center gap-2"><span class="text-brand-cyan">✔</span> Instant Budget Estimator</div>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 pt-0">
+              <button onclick="alert('Demo viewer loading...')" class="w-full bg-slate-800/80 hover:bg-brand-cyan hover:text-slate-950 text-white font-bold text-sm py-3 px-4 rounded-xl border border-brand-border transition-all text-center block">Launch Live Demo ↗</button>
+            </div>
+          </div>
+
+          <div class="bg-slate-900/40 backdrop-blur-md border border-brand-border rounded-3xl overflow-hidden flex flex-col justify-between group hover:border-brand-cyan/50 transition-all duration-300 shadow-2xl">
+            <div>
+              <div class="h-48 bg-slate-800 relative overflow-hidden flex items-center justify-center">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent z-10"></div>
+                <img src="https://images.unsplash.com/photo-1505798577917-a65157d3320a?auto=format&fit=crop&w=600&q=80" alt="Plumbing Demo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <span class="absolute top-4 left-4 z-20 bg-slate-950/80 backdrop-blur-md text-brand-cyan border border-brand-cyan/30 text-xs font-bold px-3 py-1 rounded-full">Plumbing & Services</span>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-white mb-2">Apex Pro Services</h3>
+                <p class="text-slate-400 text-sm mb-6 leading-relaxed">Designed around speed and urgency. Features persistent call bars and automated dispatch inquiry forms.</p>
+                <div class="space-y-2 mb-6 text-xs text-slate-300">
+                  <div class="flex items-center gap-2"><span class="text-brand-cyan">✔</span> Tap-to-Call Urgent Header</div>
+                  <div class="flex items-center gap-2"><span class="text-brand-cyan">✔</span> Automated Service Booking</div>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 pt-0">
+              <button onclick="alert('Demo viewer loading...')" class="w-full bg-slate-800/80 hover:bg-brand-cyan hover:text-slate-950 text-white font-bold text-sm py-3 px-4 rounded-xl border border-brand-border transition-all text-center block">Launch Live Demo ↗</button>
+            </div>
+          </div>
+
+          <div class="bg-slate-900/40 backdrop-blur-md border border-brand-border rounded-3xl overflow-hidden flex flex-col justify-between group hover:border-brand-cyan/50 transition-all duration-300 shadow-2xl">
+            <div>
+              <div class="h-48 bg-slate-800 relative overflow-hidden flex items-center justify-center">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent z-10"></div>
+                <img src="https://images.unsplash.com/photo-1632759145351-1d592919f522?auto=format&fit=crop&w=600&q=80" alt="Roofing Demo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <span class="absolute top-4 left-4 z-20 bg-slate-950/80 backdrop-blur-md text-brand-cyan border border-brand-cyan/30 text-xs font-bold px-3 py-1 rounded-full">Roofing & Exteriors</span>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-white mb-2">Vanguard Exteriors</h3>
+                <p class="text-slate-400 text-sm mb-6 leading-relaxed">Built to capture commercial and residential replacement leads with interactive material selector previews.</p>
+                <div class="space-y-2 mb-6 text-xs text-slate-300">
+                  <div class="flex items-center gap-2"><span class="text-brand-cyan">✔</span> Inspection Scheduler</div>
+                  <div class="flex items-center gap-2"><span class="text-brand-cyan">✔</span> Insurance Claim Form</div>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 pt-0">
+              <button onclick="alert('Demo viewer loading...')" class="w-full bg-slate-800/80 hover:bg-brand-cyan hover:text-slate-950 text-white font-bold text-sm py-3 px-4 rounded-xl border border-brand-border transition-all text-center block">Launch Live Demo ↗</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PACKAGES SECTION -->
+    <section id="packages" class="focus-section py-20 md:py-28">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-brand-cyan font-bold text-xs uppercase tracking-widest block mb-2">PACKAGES & OPTIONS</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">Transparent Options Built for Growth.</h2>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-8 items-stretch">
+          <div class="bg-slate-900/40 backdrop-blur-md border border-brand-border p-8 rounded-3xl flex flex-col justify-between shadow-2xl">
+            <div>
+              <div class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Option A</div>
+              <h3 class="text-2xl font-bold text-white mb-2">Single-Page Lead Funnel</h3>
+              <p class="text-sm text-slate-400 mb-6">A high-converting landing page built specifically to convert paid traffic and local searches.</p>
+              <hr class="border-brand-border mb-6" />
+              <ul class="space-y-3 text-sm text-slate-300 mb-8">
+                <li class="flex items-center gap-2"><span class="text-brand-cyan font-bold">✓</span> Hand-coded single-page build</li>
+                <li class="flex items-center gap-2"><span class="text-brand-cyan font-bold">✓</span> 100/100 PageSpeed optimization</li>
+                <li class="flex items-center gap-2"><span class="text-brand-cyan font-bold">✓</span> Automated inquiry email forms</li>
+                <li class="flex items-center gap-2"><span class="text-brand-cyan font-bold">✓</span> Mobile click-to-call integration</li>
+              </ul>
+            </div>
+            <a href="#contact" class="w-full bg-slate-800 hover:bg-slate-700 text-white font-bold py-3.5 px-4 rounded-xl text-center block transition border border-brand-border">Get Started</a>
+          </div>
+
+          <div class="bg-slate-900/80 backdrop-blur-md border-2 border-brand-cyan p-8 rounded-3xl flex flex-col justify-between relative shadow-2xl shadow-brand-cyan/10">
+            <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand-cyan text-slate-950 text-xs font-extrabold px-4 py-1 rounded-full uppercase tracking-wider shadow-lg">MOST POPULAR</div>
+            <div>
+              <div class="text-xs font-bold uppercase tracking-wider text-brand-cyan mb-2">Option B</div>
+              <h3 class="text-2xl font-bold text-white mb-2">Full Business Architecture</h3>
+              <p class="text-sm text-slate-300 mb-6">A complete multi-page web platform designed to capture market share and showcase services.</p>
+              <hr class="border-brand-border mb-6" />
+              <ul class="space-y-3 text-sm text-slate-200 mb-8">
+                <li class="flex items-center gap-2"><span class="text-brand-cyan font-bold">✓</span> Up to 6 custom designed pages</li>
+                <li class="flex items-center gap-2"><span class="text-brand-cyan font-bold">✓</span> Interactive portfolio galleries</li>
+                <li class="flex items-center gap-2"><span class="text-brand-cyan font-bold">✓</span> Advanced Local SEO optimization</li>
+                <li class="flex items-center gap-2"><span class="text-brand-cyan font-bold">✓</span> Zero recurring management fees</li>
+              </ul>
+            </div>
+            <a href="#contact" class="w-full bg-brand-cyan hover:bg-brand-cyanHover text-slate-950 font-extrabold py-3.5 px-4 rounded-xl text-center block shadow-lg shadow-brand-cyan/25 transition">Claim Your Build</a>
+          </div>
+
+          <div class="bg-slate-900/40 backdrop-blur-md border border-brand-border p-8 rounded-3xl flex flex-col justify-between shadow-2xl">
+            <div>
+              <div class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Option C</div>
+              <h3 class="text-2xl font-bold text-white mb-2">Website Conversion Audit</h3>
+              <p class="text-sm text-slate-400 mb-6">A diagnostic teardown of your existing website identifying speed bottlenecks and lost lead opportunities.</p>
+              <hr class="border-brand-border mb-6" />
+              <ul class="space-y-3 text-sm text-slate-300 mb-8">
+                <li class="flex items-center gap-2"><span class="text-brand-cyan font-bold">✓</span> Personalized video teardown</li>
+                <li class="flex items-center gap-2"><span class="text-brand-cyan font-bold">✓</span> Mobile UX & speed evaluation</li>
+                <li class="flex items-center gap-2"><span class="text-brand-cyan font-bold">✓</span> Actionable lead-fix action list</li>
+              </ul>
+            </div>
+            <a href="#contact" class="w-full bg-slate-800 hover:bg-slate-700 text-white font-bold py-3.5 px-4 rounded-xl text-center block transition border border-brand-border">Request Free Audit</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROCESS SECTION -->
+    <section id="process" class="focus-section py-20 md:py-28">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-brand-cyan font-bold text-xs uppercase tracking-widest block mb-2">OUR PROCESS</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">How We Build High-Performing Web Assets.</h2>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="bg-slate-900/40 backdrop-blur-md p-6 rounded-2xl border border-brand-border shadow-xl">
+            <div class="text-brand-cyan font-mono font-extrabold text-2xl mb-4">01</div>
+            <h3 class="text-lg font-bold text-white mb-2">Strategy & Blueprint</h3>
+            <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">We analyze your market, refine your messaging hierarchy, and structure conversion paths before writing a single line of code.</p>
+          </div>
+          <div class="bg-slate-900/40 backdrop-blur-md p-6 rounded-2xl border border-brand-border shadow-xl">
+            <div class="text-brand-cyan font-mono font-extrabold text-2xl mb-4">02</div>
+            <h3 class="text-lg font-bold text-white mb-2">Modern Engineering</h3>
+            <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">We hand-code your platform using ultra-fast frontend frameworks to ensure instant page load speeds across all mobile networks.</p>
+          </div>
+          <div class="bg-slate-900/40 backdrop-blur-md p-6 rounded-2xl border border-brand-border shadow-xl">
+            <div class="text-brand-cyan font-mono font-extrabold text-2xl mb-4">03</div>
+            <h3 class="text-lg font-bold text-white mb-2">Lead Integration</h3>
+            <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">We link forms and tap-to-call buttons directly into your phone and email workflow to capture every lead instantly.</p>
+          </div>
+          <div class="bg-slate-900/40 backdrop-blur-md p-6 rounded-2xl border border-brand-border shadow-xl">
+            <div class="text-brand-cyan font-mono font-extrabold text-2xl mb-4">04</div>
+            <h3 class="text-lg font-bold text-white mb-2">Launch & Transfer</h3>
+            <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">We publish your platform, configure SSL certificates, and pass 100% full ownership over to you. Zero ongoing platform lock-in.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section id="contact" class="focus-section py-20 md:py-28 relative">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-slate-900/60 backdrop-blur-xl border border-brand-border p-8 sm:p-12 rounded-3xl shadow-2xl relative z-10">
+          <div class="text-center mb-10">
+            <h2 class="text-3xl font-extrabold text-white tracking-tight mb-3">Ready for a Website That Converts?</h2>
+            <p class="text-slate-400 text-sm sm:text-base">Fill out the form below to request a complimentary strategy call or website audit. No obligations.</p>
+          </div>
+
+          <form action="https://formsubmit.co/websitesdeveloperservices@gmail.com" method="POST" class="space-y-6">
+            <input type="hidden" name="_subject" value="New Inquiry - Website Development Services">
+            <input type="hidden" name="_template" value="table">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+
+            <div class="grid sm:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Full Name *</label>
+                <input type="text" name="Name" required placeholder="John Smith" class="w-full bg-slate-950/80 border border-brand-border rounded-xl px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-brand-cyan transition" />
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Phone Number *</label>
+                <input type="tel" name="Phone" required placeholder="+1 (555) 000-0000" class="w-full bg-slate-950/80 border border-brand-border rounded-xl px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-brand-cyan transition" />
+              </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Email Address *</label>
+                <input type="email" name="Email" required placeholder="john@example.com" class="w-full bg-slate-950/80 border border-brand-border rounded-xl px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-brand-cyan transition" />
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Current Website (Optional)</label>
+                <input type="text" name="Website" placeholder="www.yourcompany.com" class="w-full bg-slate-950/80 border border-brand-border rounded-xl px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-brand-cyan transition" />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Project Details / Goals</label>
+              <textarea name="Message" rows="4" placeholder="Tell us about your business and goals..." class="w-full bg-slate-950/80 border border-brand-border rounded-xl px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-brand-cyan transition"></textarea>
+            </div>
+
+            <button type="submit" class="w-full bg-brand-cyan hover:bg-brand-cyanHover text-slate-950 font-extrabold text-base py-4 px-6 rounded-xl shadow-xl shadow-brand-cyan/20 transition-all transform hover:-translate-y-0.5">
+              Submit Request & Claim Strategy Call
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 border-t border-brand-border/60 text-center text-xs text-slate-500">
+      <p>© 2026 WEBSITE DEVELOPMENT SERVICES. All rights reserved.</p>
+    </footer>
+
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const focusSections = document.querySelectorAll(".focus-section");
+      const observerOptions = { root: null, rootMargin: "-20% 0px -20% 0px", threshold: 0.2 };
+      const focusObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("focus-active");
+            entry.target.classList.remove("focus-inactive");
+          } else {
+            entry.target.classList.add("focus-inactive");
+            entry.target.classList.remove("focus-active");
+          }
+        });
+      }, observerOptions);
+
+      focusSections.forEach((section) => { focusObserver.observe(section); });
+    });
+  </script>
+</body>
+</html>
