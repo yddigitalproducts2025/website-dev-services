@@ -43,21 +43,6 @@
       }
     }
   </script>
-
-  <style>
-    .focus-section {
-      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-      will-change: transform, opacity;
-    }
-    .focus-inactive {
-      opacity: 0.4;
-      transform: scale(0.95);
-    }
-    .focus-active {
-      opacity: 1;
-      transform: scale(1);
-    }
-  </style>
 </head>
 <body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-brand-cyan selection:text-slate-950 relative overflow-x-hidden">
 
@@ -65,7 +50,7 @@
   <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
     <div class="absolute -top-[20%] -left-[10%] w-[60vw] h-[60vw] rounded-full bg-gradient-to-br from-cyan-900/30 via-indigo-900/20 to-slate-950 blur-[120px] animate-mesh"></div>
     <div class="absolute top-[40%] -right-[10%] w-[50vw] h-[50vw] rounded-full bg-gradient-to-tr from-slate-900/40 via-teal-900/20 to-cyan-900/30 blur-[130px] animate-mesh" style="animation-delay: -6s;"></div>
-    <div class="absolute -bottom-[20%] left-[20%] w-[55vw] h-[55vw] rounded-full bg-gradient-to-u from-slate-950 via-indigo-950/30 to-blue-900/20 blur-[140px] animate-mesh" style="animation-delay: -12s;"></div>
+    <div class="absolute -bottom-[20%] left-[20%] w-[55vw] h-[55vw] rounded-full bg-gradient-to-t from-slate-950 via-indigo-950/30 to-blue-900/20 blur-[140px] animate-mesh" style="animation-delay: -12s;"></div>
     <div class="absolute inset-0 bg-[linear-gradient(to_right,#1f29370f_1px,transparent_1px),linear-gradient(to_bottom,#1f29370f_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
   </div>
 
@@ -100,7 +85,7 @@
     </header>
 
     <!-- HERO SECTION -->
-    <section class="focus-section relative pt-12 pb-20 md:pt-28 md:pb-28 overflow-hidden">
+    <section class="relative pt-12 pb-20 md:pt-28 md:pb-28 overflow-hidden">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl mx-auto text-center">
           <div class="inline-flex items-center gap-2 bg-slate-900/60 backdrop-blur-md border border-brand-border px-4 py-1.5 rounded-full text-xs sm:text-sm text-brand-cyan font-semibold mb-8 shadow-inner">
@@ -150,7 +135,7 @@
     </section>
 
     <!-- VALUE PROPOSITION SECTION -->
-    <section id="why-us" class="focus-section py-20 md:py-28">
+    <section id="why-us" class="py-20 md:py-28">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-16">
           <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
@@ -195,7 +180,7 @@
     </section>
 
     <!-- SHOWROOM SECTION -->
-    <section id="portfolio" class="focus-section py-20 md:py-28">
+    <section id="portfolio" class="py-20 md:py-28">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-16">
           <span class="text-brand-cyan font-bold text-xs uppercase tracking-widest block mb-2">PORTFOLIO SHOWROOM</span>
@@ -268,7 +253,7 @@
     </section>
 
     <!-- PACKAGES SECTION -->
-    <section id="packages" class="focus-section py-20 md:py-28">
+    <section id="packages" class="py-20 md:py-28">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-16">
           <span class="text-brand-cyan font-bold text-xs uppercase tracking-widest block mb-2">PACKAGES & OPTIONS</span>
@@ -325,7 +310,7 @@
     </section>
 
     <!-- PROCESS SECTION -->
-    <section id="process" class="focus-section py-20 md:py-28">
+    <section id="process" class="py-20 md:py-28">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-16">
           <span class="text-brand-cyan font-bold text-xs uppercase tracking-widest block mb-2">OUR PROCESS</span>
@@ -357,7 +342,7 @@
     </section>
 
     <!-- CONTACT FORM -->
-    <section id="contact" class="focus-section py-20 md:py-28 relative">
+    <section id="contact" class="py-20 md:py-28 relative">
       <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="bg-slate-900/60 backdrop-blur-xl border border-brand-border p-8 sm:p-12 rounded-3xl shadow-2xl relative z-10">
           <div class="text-center mb-10">
@@ -408,24 +393,5 @@
 
   </div>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const focusSections = document.querySelectorAll(".focus-section");
-      const observerOptions = { root: null, rootMargin: "-20% 0px -20% 0px", threshold: 0.2 };
-      const focusObserver = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("focus-active");
-            entry.target.classList.remove("focus-inactive");
-          } else {
-            entry.target.classList.add("focus-inactive");
-            entry.target.classList.remove("focus-active");
-          }
-        });
-      }, observerOptions);
-
-      focusSections.forEach((section) => { focusObserver.observe(section); });
-    });
-  </script>
 </body>
 </html>
